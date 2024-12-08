@@ -6,6 +6,9 @@
     </head>
     <body>
         <h1>success</h1>
+        <p>帳號：<span th:text="${user.username}"></span></p>
+        <p>權限：<span th:text="${user.permission}"></span></p>
+        <p>帳號有效期限：<span th:text="${user.accountValidityPeriod}"></span></p>
         <form th:action="@{/logout}" method="post" style="display: inline;">
             <button type="submit">登出</button>
         </form>
